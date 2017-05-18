@@ -11,7 +11,7 @@ import subprocess
 import os
 from socketIO_client import SocketIO, LoggingNamespace
 from pprint import pprint
-import musics
+#import musics
 import random
 import pdb
 import json
@@ -236,13 +236,13 @@ socketIO.emit('getQueue') # get existing musics in queue  ->  Besoin de ça pour
 
 # ****************************** Instantiate buttons  ******************************
 buttonNEXT_SWITCH = ExtendedButton(19,Action.PLAYPAUSENEXT)
-button17 = ExtendedButton(17,Action.PLAYPAUSENEXT)
+button1 = ExtendedButton(17,Action.PLAYLIST,"ALL Chansons")
 #button6 = Button(6,hold_time=2) TODO : delete file? copy?
-button12 = ExtendedButton(12,Action.PLAYLIST,"Ambiance instru")
-button25 = ExtendedButton(26,Action.PLAYLIST,"Calm")
-button5 = ExtendedButton(5,Action.PLAYLIST,"Chansons fr")
-button6 = ExtendedButton(6,Action.PLAYLIST,"Electro")
-button16 = ExtendedButton(16,Action.PLAYLIST,"Soundtracks")
+button2 = ExtendedButton(12,Action.PLAYLIST,"ALL")
+button3 = ExtendedButton(26,Action.PLAYLIST,"Instrumental")
+button4 = ExtendedButton(5,Action.PLAYLIST,"Soundtracks")
+button5 = ExtendedButton(6,Action.PLAYLIST,"Chansons")
+button6 = ExtendedButton(16,Action.PLAYLIST,"Calm")
 
 button20 = ExtendedButton(20,Action.PREVIOUSCLEAR)
 
